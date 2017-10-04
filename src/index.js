@@ -2,7 +2,17 @@
  * Created by markopoikkimaki on 2017-09-03.
  */
 
+
+
 import Mathematics from './sum';
+import ImageViewer from './image_viewer';
+
+
+const imageGallery = document.querySelector('#image-gallery');
+
+const iw = new ImageViewer();
+const image = iw.getImage();
+imageGallery.appendChild(image);
 
 
 document.getElementById('btn').addEventListener('click', (e) => {
